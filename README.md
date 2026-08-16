@@ -37,6 +37,8 @@ The main visuals show:
 - complaint profiles among all patients compared with admitted patients;
 - the difference in complaint representation between admitted patients and the overall patient population.
 
+![NHS Emergency Care Activity Dashboard](Screenshots/dashboard.png)
+
 ---
 
 ## How I built it
@@ -60,6 +62,14 @@ Power Query handles the preparation of the data, including:
 
 The intention was to make the workflow **scalable**: when a new monthly file is added to the source folder, the workbook can be refreshed instead of manually rebuilding the dataset.
 
+### Power Query workflow
+
+The Power Query transformation is built around a folder-based workflow, with a sample file and transformation function used to process the source data.
+
+![Power Query Transform Sample File](Screenshots/power-query-transform-sample-file.png)
+
+![Power Query query](Screenshots/power-query-queryfile.png)
+
 ---
 
 ## Analysis
@@ -82,6 +92,12 @@ One of the main analytical measures is the **admission representation difference
 > share of the same complaint category among all patients
 
 This helps highlight complaint categories that are disproportionately represented among admitted patients.
+
+### PivotTables
+
+PivotTables provide the analytical layer behind the dashboard charts and KPIs.
+
+![PivotTables used for the dashboard](Screenshots/pivot%20table.png)
 
 ---
 
