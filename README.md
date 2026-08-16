@@ -45,6 +45,8 @@ The main visuals show:
 
 The source data was provided as **monthly files**. Rather than manually combining the files, I built a folder-based Power Query workflow.
 
+**Data source:** [NHS England – A&E Attendances and Emergency Admissions](https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/)
+
 The process is:
 
 **Monthly source files → Power Query → cleaned and reshaped dataset → PivotTables → PivotCharts → Dashboard**
